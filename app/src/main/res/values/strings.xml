@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="demo_image">Demo image</string>
+    <string name="pune">Pune</string>
+    <string name="temp">Temp :</string>
+    <string name="description">Description :</string>
+    <string name="_25_c">25 C</string>
+    <string name="light_intensity_drizzle">light intensity drizzle</string>
+</resources>
