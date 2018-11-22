@@ -1,47 +1,124 @@
+
 package anandpc.github.io.weatherapp.Model;
+
+import java.util.List;
 
 public class SingleWeatherData {
 
-    private String cityName;
-    private String temp;
-    private String description;
+    private Coord coord;
+    private List<Weather> weather = null;
+    private String base;
+    private Main main;
+    private Wind wind;
+    private Clouds clouds;
+    private Integer dt;
+    private Sys sys;
+    private Integer id;
+    private String name;
+    private Integer cod;
 
-    public SingleWeatherData(String cityName, String temp, String description) {
-        this.cityName = cityName;
-        this.temp = temp;
-        this.description = description;
+    public Coord getCoord() {
+        return coord;
     }
 
-    public String getCityName() {
-        return cityName;
+    public void setCoord(Coord coord) {
+        this.coord = coord;
     }
 
-    public String getTemp() {
-        return temp;
+    public List<Weather> getWeather() {
+        return weather;
     }
 
-    public String getDescription() {
-        return description;
+    public void setWeather(List<Weather> weather) {
+        this.weather = weather;
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    public String getBase() {
+        return base;
     }
 
-    public void setTemp(String temp) {
-        this.temp = temp;
+    public void setBase(String base) {
+        this.base = base;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public Main getMain() {
+        return main;
+    }
+
+    public void setMain(Main main) {
+        this.main = main;
+    }
+
+    public Wind getWind() {
+        return wind;
+    }
+
+    public void setWind(Wind wind) {
+        this.wind = wind;
+    }
+
+    public Clouds getClouds() {
+        return clouds;
+    }
+
+    public void setClouds(Clouds clouds) {
+        this.clouds = clouds;
+    }
+
+    public Integer getDt() {
+        return dt;
+    }
+
+    public void setDt(Integer dt) {
+        this.dt = dt;
+    }
+
+    public Sys getSys() {
+        return sys;
+    }
+
+    public void setSys(Sys sys) {
+        this.sys = sys;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getCod() {
+        return cod;
+    }
+
+    public void setCod(Integer cod) {
+        this.cod = cod;
     }
 
     @Override
     public String toString() {
         return "SingleWeatherData{" +
-                "cityName='" + cityName + '\'' +
-                ", temp='" + temp + '\'' +
-                ", description='" + description + '\'' +
+                "coord=" + coord +
+                ", weather=" + weather +
+                ", base='" + base + '\'' +
+                ", main=" + main +
+                ", wind=" + wind +
+                ", clouds=" + clouds +
+                ", dt=" + dt +
+                ", sys=" + sys +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", cod=" + cod +
                 '}';
     }
 }
