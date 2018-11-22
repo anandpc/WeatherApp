@@ -1,47 +1,63 @@
+
 package anandpc.github.io.weatherapp.Model;
+
 
 public class SingleWeatherData {
 
-    private String cityName;
-    private String temp;
-    private String description;
+    private String cod;
+    private Double message;
+    private Integer cnt;
+    private java.util.List<anandpc.github.io.weatherapp.Model.List> list = null;
+    private City city;
 
-    public SingleWeatherData(String cityName, String temp, String description) {
-        this.cityName = cityName;
-        this.temp = temp;
-        this.description = description;
+    public String getCod() {
+        return cod;
     }
 
-    public String getCityName() {
-        return cityName;
+    public void setCod(String cod) {
+        this.cod = cod;
     }
 
-    public String getTemp() {
-        return temp;
+    public Double getMessage() {
+        return message;
     }
 
-    public String getDescription() {
-        return description;
+    public void setMessage(Double message) {
+        this.message = message;
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    public Integer getCnt() {
+        return cnt;
     }
 
-    public void setTemp(String temp) {
-        this.temp = temp;
+    public void setCnt(Integer cnt) {
+        this.cnt = cnt;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public java.util.List<anandpc.github.io.weatherapp.Model.List> getList() {
+        return list;
+    }
+
+    public void setList(java.util.List<anandpc.github.io.weatherapp.Model.List> list) {
+        this.list = list;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 
     @Override
     public String toString() {
         return "SingleWeatherData{" +
-                "cityName='" + cityName + '\'' +
-                ", temp='" + temp + '\'' +
-                ", description='" + description + '\'' +
+                "cod='" + cod + '\'' +
+                ", message=" + message +
+                ", cnt=" + cnt +
+                ", list=" + list +
+                ", city=" + city +
                 '}';
     }
 }
