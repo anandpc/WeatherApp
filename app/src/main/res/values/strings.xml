@@ -2,8 +2,13 @@
     <string name="app_name">Weather App</string>
     <string name="demo_image">Demo image</string>
     <string name="date">2018-11-23 15:00:00</string>
-    <string name="temp">Temp :</string>
     <string name="description">Description :</string>
     <string name="_25_c">25 C</string>
     <string name="light_intensity_drizzle">light intensity drizzle</string>
+    <string name="_2018_11_22_18_00_00">2018-11-22 18:00:00</string>
+    <string name="_25">25</string>
+    <string name="humidity">Humidity :</string>
+    <string name="clear_sky_clouds">clear sky clouds</string>
+    <string name="temp">Temp :</string>
+    <string name="_29">29</string>
 </resources>
